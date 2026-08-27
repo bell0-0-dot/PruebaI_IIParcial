@@ -16,7 +16,7 @@ public class Prueb1_IIParcial {
         }
         for (File archivo: archivos){
             if(archivo.isDirectory()){
-                 System.out.println("⚠️ No se pudo leer: " + ruta.getAbsolutePath());
+                 System.out.println("️ No se pudo leer: " + ruta.getAbsolutePath());
                 contarArchivos(archivo);
             }else if(archivo.isFile()){
                 clasificar(archivo);
