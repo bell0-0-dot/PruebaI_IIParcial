@@ -10,13 +10,14 @@ public class Prueb1_IIParcial {
     private static int otrosArchivos=0;
     
     private static void contarArchivos(File ruta){
-        File []archivos=ruta.listFiles();
+       
         if(ruta==null){
             return;
         }
+        
+         File []archivos=ruta.listFiles();
         for (File archivo: archivos){
             if(archivo.isDirectory()){
-                 System.out.println("️ No se pudo leer: " + ruta.getAbsolutePath());
                 contarArchivos(archivo);
             }else if(archivo.isFile()){
                 clasificar(archivo);
