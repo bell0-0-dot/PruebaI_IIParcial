@@ -88,6 +88,7 @@ public class Prueb1_IIParcial {
        do{
         System.out.println("Ingrese la ruta a analizar: ");
         ruta=leer.nextLine();
+        rutaRaiz=new File(ruta);
         
         if (!rutaRaiz.exists()) {
                 System.out.println("Error: la ruta ingresada no existe. Ingrese una existente");
